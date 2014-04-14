@@ -1,0 +1,213 @@
+$container-width: 620px;
+
+@mixin meyer-reset {
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+  }
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote {
+    &:before, &:after {
+      content: "";
+      content: none;
+    }
+  }
+  q {
+    &:before, &:after {
+      content: "";
+      content: none;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+  -moz-box-sizing: $box-model;
+  box-sizing: $box-model;
+}
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin content() {
+    width: $content-width;
+    @include center-block();
+}
+/*
+  _                             _   
+ | |                           | |  
+ | |     __ _ _   _  ___  _   _| |_ 
+ | |    / _` | | | |/ _ \| | | | __|
+ | |___| (_| | |_| | (_) | |_| | |_ 
+ |______\__,_|\__, |\___/ \__,_|\__|
+               __/ |                
+              |___/                                            
+*/
+
+@include meyer-reset;
+
+body {
+    background: #fff;
+    font-family: Lato;
+    text-align: center;
+}
+.container {
+  width: $container-width;
+  @include center-block();
+}
+.header {
+    background:#65c178;
+    color: #fff;
+    padding: 50px 0;
+    h1 {
+      font-size: 64px;
+      font-weight: bolder;
+    }
+    h2 { 
+      font-size: 16px;
+      margin: 10px 0 25px;
+    }
+    a {
+      padding:15px 45px;
+      transition:.2s all;
+      @include border-radius(5px);
+      display:inline-block;
+      color:#fff;
+      border:1px solid #fff;
+      &:hover {
+        background:#fff;
+        color: #65c178;
+      }
+      &:active {
+        position: relative;
+        top: 1px;
+      }
+    }
+}
+.content {
+    margin: 70px auto;
+    color:#777777;    
+    text-align: center;
+    h2 {
+        font-weight: bolder;
+        color: #455469;
+        font-size: 32px;        
+        margin:0 0 20px;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background:#f3f3f3;
+      width: 450px;
+      margin:50px auto 40px;
+    }
+    p {
+      line-height: 1.8;
+      font-size: 18px;
+      font-weight: 300;
+      margin:0 0 20px;
+    }
+    .code {
+      font-family: Courier New;
+      font-size: 14px;
+      background: #ebebeb;
+      margin: 0 2px;
+      padding: 5px 10px;
+    }
+    .sublime {
+      background:#2d2d2d;
+      text-align: left;
+      padding: 20px 30px;
+      @include box-sizing(border-box);
+      color:#e6db74;
+      font-size: 14px;
+      font-family: Courier New;
+      .p {
+        color:#f92672;
+      }
+      .w {
+        color:#fff;
+      }
+      .g {
+        color:#7fe22a;
+      }
+      .comment {
+        color:#75715e;
+      }
+      .padding {
+        padding:0 0 0 25px;
+      }
+      .padding-2 {
+        padding: 0 0 0 60px;
+      }
+    }    
+    input {
+      padding: 20px;
+      font-family: Lato;
+      font-weight: 300;
+      font-size:14px;
+      width:360px;
+      outline: 0;
+      border:1px solid #d5d5d5;
+      @include border-radius(2px);
+      &:focus {
+        border-color:#65c178;
+      }
+    }
+}
+.jcalculator_wrap {
+  margin:0 auto;
+  width:360px;
+  @include clearfix();
+}
+.footer {
+    @include clearfix();
+    background:#1e2a38;
+    color: #71757e;
+    font-size:14px;
+    padding:20px 0;
+    a {
+      color: #71757e;
+      border-bottom: 1px solid #71757e;
+      padding: 0 0 2px;
+      &:hover {
+        color:#FFFFFF;
+        border-color:#FFFFFF;
+      }
+    }
+}

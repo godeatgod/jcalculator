@@ -1,0 +1,78 @@
+<!doctype>
+<html>
+
+<head>
+
+    <title>jCalculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="jcalculator.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>jCalculator</h1>
+        <h2>Awesome jQuery plugin for calculus inputs</h2>
+
+        <a href="#">Download</a>
+
+    </div>
+
+    <div class="container content">
+
+        <h2>How to install</h2>
+        <p>1. Include the following files before <span class="code">body</span> tag close.</p>
+
+        <p class="sublime">
+            <span class="w">&lt;</span><span class="p">link</span> <span class="g">href</span><span class="w">=</span>"path_to/jCalculator.css" <span class="g">rel</span><span class="w">=</span>"stylesheet" <span class="g">type</span><span class="w">=</span>"text/css"<span class="w">&gt;</span><br/>
+            <span class="comment">&lt;-- jQuery library --&gt;</span></br>
+            <span class="w">&lt;</span><span class="p">script</span> <span class="g">type</span><span class="w">=</span>"text/javascript" src="path_to/jQuery.js"<span class="w">&gt;&lt;/</span><span class="p">script</span><span class="w">&gt;</span></br>
+            <span class="w">&lt;</span><span class="p">script</span> <span class="g">type</span><span class="w">=</span>"text/javascript" src="path_to/jCalculator.js"<span class="w">&gt;&lt;/</span><span class="p">script</span><span class="w">&gt;</span>
+        </p>
+
+        <p>2. Call the <span class="code">jCalculator</span> plugin.</p>
+
+        <p class="sublime">
+            <span class="w">&lt;</span><span class="p">script</span> <span class="g">type</span><span class="w">=</span>"text/javascript"<span class="w">&gt;</span> </br>
+            <span class="padding"><span class="p">$</span><span class="w">(</span>'#yourInput'<span class="w">).jCalculator({</span> <span class="comment">&lt;-- #yourInput its the input id --&gt;</span><span></br>                
+                <span class="padding-2 w">position: top <span class="comment">&lt;-- position can be top or bottom --&gt;</span></span></br>
+            <span class="padding w">});</span></span></br>
+        
+            <span class="w">&lt;/</span><span class="p">script</span><span class="w">&gt;</span>
+        </p>
+
+        <hr />
+
+        <h2>Demonstration</h2>
+        <p>Click the input bellow and see the magic</p>
+        <div class="jcalculator_wrap">
+          <input type="text" id="demonstration" placeholder="Click here" />
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            &copy; 2014 - jCalculator is brought to you by <a href="#" target="_blank">Adrian Valentin Dan</a> and <a href="#">Balaj Marius</a>.
+        </div>
+    </div>
+
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="jcalculator.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+											 
+    $('#demonstration').calculator("jcalculator_dark");
+});
+</script>
+
+
+</body>
+
+</html>

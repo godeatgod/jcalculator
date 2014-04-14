@@ -1,0 +1,324 @@
+/*
+  _                             _   
+ | |                           | |  
+ | |     __ _ _   _  ___  _   _| |_ 
+ | |    / _` | | | |/ _ \| | | | __|
+ | |___| (_| | |_| | (_) | |_| | |_ 
+ |______\__,_|\__, |\___/ \__,_|\__|
+               __/ |                
+              |___/                                            
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #fff;
+  font-family: Lato;
+  text-align: center;
+}
+
+.container {
+  width: 620px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background: #65c178;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.header h1 {
+  font-size: 64px;
+  font-weight: bolder;
+}
+
+.header h2 {
+  font-size: 16px;
+  margin: 10px 0 25px;
+}
+
+.header a {
+  padding: 15px 45px;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  border-radius: 5px;
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.header a:hover {
+  background: #fff;
+  color: #65c178;
+}
+
+.header a:active {
+  position: relative;
+  top: 1px;
+}
+
+.content {
+  margin: 70px auto;
+  color: #777777;
+  text-align: center;
+}
+
+.content h2 {
+  font-weight: bolder;
+  color: #455469;
+  font-size: 32px;
+  margin: 0 0 20px;
+}
+
+.content hr {
+  border: 0;
+  height: 1px;
+  background: #f3f3f3;
+  width: 450px;
+  margin: 50px auto 40px;
+}
+
+.content p {
+  line-height: 1.8;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+.content .code {
+  font-family: Courier New;
+  font-size: 14px;
+  background: #ebebeb;
+  margin: 0 2px;
+  padding: 5px 10px;
+}
+
+.content .sublime {
+  background: #2d2d2d;
+  text-align: left;
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #e6db74;
+  font-size: 14px;
+  font-family: Courier New;
+}
+
+.content .sublime .p {
+  color: #f92672;
+}
+
+.content .sublime .w {
+  color: #fff;
+}
+
+.content .sublime .g {
+  color: #7fe22a;
+}
+
+.content .sublime .comment {
+  color: #75715e;
+}
+
+.content .sublime .padding {
+  padding: 0 0 0 25px;
+}
+
+.content .sublime .padding-2 {
+  padding: 0 0 0 60px;
+}
+
+.content input {
+  padding: 20px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 14px;
+  width: 360px;
+  outline: 0;
+  border: 1px solid #d5d5d5;
+  border-radius: 2px;
+}
+
+.content input:focus {
+  border-color: #65c178;
+}
+
+.jcalculator_wrap {
+  margin: 0 auto;
+  width: 360px;
+}
+
+.jcalculator_wrap:before,
+.jcalculator_wrap:after {
+  content: "";
+  display: table;
+}
+
+.jcalculator_wrap:after {
+  clear: both;
+}
+
+.footer {
+  background: #1e2a38;
+  color: #71757e;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+.footer:before,
+.footer:after {
+  content: "";
+  display: table;
+}
+
+.footer:after {
+  clear: both;
+}
+
+.footer a {
+  color: #71757e;
+  border-bottom: 1px solid #71757e;
+  padding: 0 0 2px;
+}
+
+.footer a:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
