@@ -104,9 +104,9 @@ var template =
 	};	
 
 	var controller;
-	this.forEach(function() {
-	    controller = new Controller(this);
-	    this.on('focus', function() {
+	this.each(function() {
+	    controller = new Controller($(this));
+	    $(this).on('focus', function() {
 		$(".jcalculator").slideDown(200);
 	    });
 	});
