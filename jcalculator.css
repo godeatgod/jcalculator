@@ -1,0 +1,19 @@
+/*
+  jCalculator its an awsome jQuery plugin made by Adrian Dan Valentin and crafted by Balaj Marius.
+  Contact us for awesome web development.
+  Enjoy coding!          
+*/
+ 
+.jcalculator_wrap { position: relative; font-family: Helvetica, Arial, sans-serif; }
+.jcalculator_wrap .jcalculator { position: absolute; right: 0; display: none; float: left; padding: 5px 3px 3px; width:170px; border-radius: 3px; background: #fff; color:#fff; font-weight: bold;  font-size: 14px; cursor: pointer; }
+.jcalculator_wrap .jcalculator span { display:block; float:left; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; margin:0 0 2px 2px; width: 40px; height: 40px; border-radius: 3px; background: #c1cfd9; line-height: 40px; }
+.jcalculator_wrap .jcalculator span:active { border: 1px solid transparent; }
+.jcalculator_wrap .jcalculator span.operation { background: #f97e76; }
+.jcalculator_wrap .jcalculator span.multiplication { text-transform: lowercase; }
+.jcalculator_wrap .jcalculator span.plus { background: #e54d3d; }
+.jcalculator_wrap .jcalculator span.clear { background: #dadada; }
+.jcalculator_wrap .jcalculator span.equal { background: #FFC961; }
+/* Dark Theme */
+.jcalculator_wrap .jcalculator.jcalculator_dark { background: #2e3641; }
+.jcalculator_wrap .jcalculator_dark span { background: #5C6A7E; }
+.jcalculator_wrap .jcalculator_dark span.equal { background: #FFB72D; }
